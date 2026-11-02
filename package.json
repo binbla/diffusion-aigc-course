@@ -1,0 +1,15 @@
+{
+  "name": "diffusion-aigc-course",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Diffusion / AIGC 面试课堂：Cloudflare Workers 静态部署",
+  "scripts": {
+    "build": "mkdocs build --strict",
+    "preview": "mkdocs serve",
+    "predeploy": "mkdocs build --strict",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

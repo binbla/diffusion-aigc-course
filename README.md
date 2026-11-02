@@ -93,7 +93,7 @@ mkdocs serve
 
 ### 部署与 AI 伴读
 
-- [Cloudflare Pages 部署指南](DEPLOYMENT.md)
+- [Cloudflare Workers 静态部署指南](DEPLOYMENT.md)
 - [AI 伴读设计说明（BYOK，无服务器）](AI_COMPANION.md)
 
 ### 配套资料

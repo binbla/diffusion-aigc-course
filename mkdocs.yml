@@ -1,0 +1,138 @@
+site_name: Diffusion / AIGC 面试课堂
+site_description: 26 道高频题，8 章 26 节课，3 个综合练习
+site_author: Diffusion / AIGC Course
+site_url: https://your-domain.com/
+docs_dir: docs
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换暗色
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换亮色
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra_css:
+  - stylesheets/ai-companion.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/ai-companion.js
+
+nav:
+  - 首页: index.md
+  - 课程总览: course.md
+  - 学习路径: syllabus.md
+  - AI 伴读（可选）: ai-companion.md
+  - 章节:
+      - 第 0 章 导学: chapters/00-orientation.md
+      - 第 1 章 扩散模型基础: chapters/01-foundations.md
+      - 第 2 章 采样、加速与引导: chapters/02-sampling-guidance.md
+      - 第 3 章 Latent Diffusion 与 SD: chapters/03-latent-sd.md
+      - 第 4 章 条件控制与个性化: chapters/04-conditioning-personalization.md
+      - 第 5 章 模型演进与系统对比: chapters/05-model-evolution.md
+      - 第 6 章 评估、失败模式与面试实战: chapters/06-evaluation-interview.md
+      - 第 7 章 综合练习与面试答辩: chapters/07-capstone.md
+  - 第 1 章完整讲义:
+      - 材料包总览: lessons/ch01/README.md
+      - 1.1 生成模型全景与扩散直觉: lessons/ch01/01-生成模型全景与扩散直觉.md
+      - 1.2 前向过程与噪声日程: lessons/ch01/02-前向过程与噪声日程.md
+      - 1.3 反向过程与 DDPM 损失: lessons/ch01/03-反向过程与DDPM损失.md
+      - 1.4 扩散变体与非高斯噪声: lessons/ch01/04-扩散变体与非高斯噪声.md
+      - 章节面试题库: lessons/ch01/05-章节面试题库.md
+      - 章节练习与答案: lessons/ch01/06-章节练习与答案.md
+      - 讲师手册: lessons/ch01/07-讲师手册.md
+      - 材料设计理由: lessons/ch01/08-材料设计理由.md
+  - 第 2 章完整讲义:
+      - 材料包总览: lessons/ch02/README.md
+      - 2.1 DDPM 采样与 DDIM: lessons/ch02/01-DDPM采样与DDIM.md
+      - 2.2 SDE/ODE 与高阶采样器: lessons/ch02/02-SDE-ODE与高阶采样器.md
+      - 2.3 蒸馏与少步生成: lessons/ch02/03-蒸馏与少步生成.md
+      - 2.4 Classifier Guidance 与 CFG: lessons/ch02/04-ClassifierGuidance与CFG.md
+      - 章节面试题库: lessons/ch02/05-章节面试题库.md
+      - 章节练习与答案: lessons/ch02/06-章节练习与答案.md
+      - 讲师手册: lessons/ch02/07-讲师手册.md
+      - 材料设计理由: lessons/ch02/08-材料设计理由.md
+  - 第 3 章完整讲义:
+      - 材料包总览: lessons/ch03/README.md
+      - 3.1 AE/VAE/VQ-VAE: lessons/ch03/01-AE-VAE-VQVAE.md
+      - 3.2 LDM 与 SD 核心优化: lessons/ch03/02-LDM与SD核心优化.md
+      - 3.3 Self/Cross Attention: lessons/ch03/03-SelfAttention与CrossAttention.md
+      - 3.4 SD 训练与 Offset Noise: lessons/ch03/04-SD训练与OffsetNoise.md
+      - 章节面试题库: lessons/ch03/05-章节面试题库.md
+      - 章节练习与答案: lessons/ch03/06-章节练习与答案.md
+      - 讲师手册: lessons/ch03/07-讲师手册.md
+      - 材料设计理由: lessons/ch03/08-材料设计理由.md
+  - 第 4 章完整讲义:
+      - 材料包总览: lessons/ch04/README.md
+      - 4.1 CLIP 全解: lessons/ch04/01-CLIP全解.md
+      - 4.2 ControlNet: lessons/ch04/02-ControlNet.md
+      - 4.3 IP-Adapter: lessons/ch04/03-IP-Adapter.md
+      - 4.4 LoRA 系列: lessons/ch04/04-LoRA-DreamBooth-TI-Hypernetwork.md
+      - 章节面试题库: lessons/ch04/05-章节面试题库.md
+      - 章节练习与答案: lessons/ch04/06-章节练习与答案.md
+      - 讲师手册: lessons/ch04/07-讲师手册.md
+      - 材料设计理由: lessons/ch04/08-材料设计理由.md
+  - 第 5 章完整讲义:
+      - 材料包总览: lessons/ch05/README.md
+      - 5.1 SDXL: lessons/ch05/01-SDXL.md
+      - 5.2 SD3: lessons/ch05/02-SD3.md
+      - 5.3 SD vs DALL·E 2 vs GAN: lessons/ch05/03-SD-DALLE2-GAN.md
+      - 章节面试题库: lessons/ch05/05-章节面试题库.md
+      - 章节练习与答案: lessons/ch05/06-章节练习与答案.md
+      - 讲师手册: lessons/ch05/07-讲师手册.md
+      - 材料设计理由: lessons/ch05/08-材料设计理由.md
+  - 第 6 章完整讲义:
+      - 材料包总览: lessons/ch06/README.md
+      - 6.1 图像生成评估: lessons/ch06/01-图像生成评估.md
+      - 6.2 GAN 模式坍塌: lessons/ch06/02-GAN模式坍塌.md
+      - 6.3 26 题串讲与模拟面试: lessons/ch06/03-26题串讲与模拟面试.md
+      - 章节面试题库: lessons/ch06/05-章节面试题库.md
+      - 章节练习与答案: lessons/ch06/06-章节练习与答案.md
+      - 讲师手册: lessons/ch06/07-讲师手册.md
+      - 材料设计理由: lessons/ch06/08-材料设计理由.md
+  - 第 7 章完整讲义:
+      - 材料包总览: lessons/ch07/README.md
+      - 7.1 DDPM 纸面推导: lessons/ch07/01-DDPM纸面推导与采样对比.md
+      - 7.2 SD 条件控制方案: lessons/ch07/02-SD条件控制方案设计.md
+      - 7.3 评测与答辩: lessons/ch07/03-评测方案与面试答辩.md
+      - 答辩题库与评分: lessons/ch07/05-答辩题库与评分.md
+      - 综合练习模板: lessons/ch07/06-综合练习模板.md
+      - 讲师手册: lessons/ch07/07-讲师手册.md
+      - 材料设计理由: lessons/ch07/08-材料设计理由.md
+  - 扩展篇:
+      - 总览: extension/README.md
+      - 知识缺口审计: extension/knowledge-gaps.md
+      - 2023–2026 论文地图: extension/papers-2023-2026.md
+  - 题目映射: question-map.md
+  - 评估方案: assessment.md
+  - 公式速查: formulas.md
+  - 完整题库: reference/question-bank.md
